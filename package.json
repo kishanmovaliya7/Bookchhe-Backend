@@ -1,0 +1,50 @@
+{
+  "name": "BookCheServer",
+  "version": "1.0.0",
+  "description": "node starter",
+  "main": "startindex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch startindex.js",
+    "start:prod": "NODE_ENV=production nodemon --watch startindex.js",
+    "doc": "apidoc -i src/ -o doc",
+    "lint": "eslint src",
+    "ci": "npm run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.16.3",
+    "express-fileupload": "^1.2.1",
+    "express-jwt": "^5.3.1",
+    "google-play-scraper": "^8.0.2",
+    "jsonwebtoken": "^8.0.0",
+    "md5": "^2.2.1",
+    "metascraper": "^5.16.9",
+    "metascraper-author": "^5.16.9",
+    "metascraper-clearbit": "^5.7.17",
+    "metascraper-date": "^5.7.17",
+    "metascraper-description": "^5.7.17",
+    "metascraper-image": "^5.7.17",
+    "metascraper-logo": "^5.7.17",
+    "metascraper-publisher": "^5.7.17",
+    "metascraper-title": "^5.7.17",
+    "metascraper-url": "^5.7.17",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.7.5",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.6",
+    "razorpay": "^2.0.6",
+    "save": "^2.3.0",
+    "unfluff": "^3.2.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint-config-fortech": "^2.0.2"
+  }
+}
